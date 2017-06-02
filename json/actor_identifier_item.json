@@ -1,1 +1,19 @@
-{"_id": "592ca4df7f79fa013927b1de", "schema_version": 1, "source": [{"instances": [{"analyst": "yao", "date": "2017-05-29 22:46:55.372000"}], "name": "AlienVault OTX"}], "active": "on", "created": "2017-05-29 22:46:55.371000", "identifier_type": "Virus", "name": "Hello"}
+{
+  "_id": "592ca4df7f79fa013927b1de",
+  "schema_version": 1,
+  "source": [
+    {
+      "instances": [
+        {
+          "analyst": "yao",
+          "date": "2017-05-29 22:46:55.372000"
+        }
+      ],
+      "name": "AlienVault OTX"
+    }
+  ],
+  "active": "on",
+  "created": "2017-05-29 22:46:55.371000",
+  "identifier_type": "Virus",
+  "name": "Hello"
+}

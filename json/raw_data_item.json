@@ -1,1 +1,40 @@
-{"_id": "592cbfd07f79fa0138e76a98", "status": "New", "created": "2017-05-30 00:41:52.229000", "modified": "2017-05-30 00:45:20.732000", "schema_version": 2, "actions": [], "source": [{"instances": [{"analyst": "yao", "date": "2017-05-30 00:41:52.229000", "method": "Upload"}], "name": "Faker Vault"}], "tickets": [], "bucket_list": [], "campaign": [], "locations": [], "description": "", "objects": [], "relationships": [], "releasability": [], "screenshots": ["592cc0a07f79fa0138e76ac1"], "sectors": [], "data_type": "Text", "data": "Aliquam suscipit dolores voluptatibus totam illo eligendi voluptas beatae. Quae illum sint dicta. Tempore dolore praesentium est soluta. Vel occaecati adipisci hic facere et.", "highlights": [], "inlines": [], "link_id": null, "md5": "7de1ef13b4b3005aeb6694031a35094a", "title": "Unde iure magni molestiae numquam iure aliquam id.", "version": 1}
+{
+  "_id": "592cbfd07f79fa0138e76a98",
+  "status": "New",
+  "created": "2017-05-30 00:41:52.229000",
+  "modified": "2017-05-30 00:45:20.732000",
+  "schema_version": 2,
+  "actions": [],
+  "source": [
+    {
+      "instances": [
+        {
+          "analyst": "yao",
+          "date": "2017-05-30 00:41:52.229000",
+          "method": "Upload"
+        }
+      ],
+      "name": "Faker Vault"
+    }
+  ],
+  "tickets": [],
+  "bucket_list": [],
+  "campaign": [],
+  "locations": [],
+  "description": "",
+  "objects": [],
+  "relationships": [],
+  "releasability": [],
+  "screenshots": [
+    "592cc0a07f79fa0138e76ac1"
+  ],
+  "sectors": [],
+  "data_type": "Text",
+  "data": "Aliquam suscipit dolores voluptatibus totam illo eligendi voluptas beatae. Quae illum sint dicta. Tempore dolore praesentium est soluta. Vel occaecati adipisci hic facere et.",
+  "highlights": [],
+  "inlines": [],
+  "link_id": null,
+  "md5": "7de1ef13b4b3005aeb6694031a35094a",
+  "title": "Unde iure magni molestiae numquam iure aliquam id.",
+  "version": 1
+}

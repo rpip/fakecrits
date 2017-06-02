@@ -1,1 +1,157 @@
-{"_id": "592bed8f7f79fa0138e76908", "status": "New", "created": "2017-05-29 09:44:47.881000", "modified": "2017-05-29 22:55:44.455000", "schema_version": 3, "actions": [], "source": [{"instances": [{"analyst": "nonroot", "date": "2017-05-29 09:44:47.883000"}, {"analyst": "nonroot", "date": "2017-05-29 09:45:23.973000"}, {"analyst": "nonroot", "date": "2017-05-29 09:59:56.440000"}, {"analyst": "nonroot", "date": "2017-05-29 10:04:49.850000"}, {"analyst": "nonroot", "date": "2017-05-29 10:05:18.819000"}, {"analyst": "nonroot", "date": "2017-05-29 10:09:49.731000"}, {"analyst": "nonroot", "date": "2017-05-29 11:35:48.371000"}, {"analyst": "nonroot", "date": "2017-05-29 11:35:57.886000"}, {"analyst": "nonroot", "date": "2017-05-29 11:37:29.899000"}, {"analyst": "nonroot", "date": "2017-05-29 11:37:44.141000"}, {"analyst": "nonroot", "date": "2017-05-29 11:44:18.757000"}, {"analyst": "nonroot", "date": "2017-05-29 11:44:36.413000"}, {"analyst": "nonroot", "date": "2017-05-29 11:47:09.945000"}, {"analyst": "nonroot", "date": "2017-05-29 12:23:51.101000"}, {"analyst": "nonroot", "date": "2017-05-29 14:22:01.104000"}, {"analyst": "nonroot", "date": "2017-05-29 14:22:22.870000"}, {"analyst": "nonroot", "date": "2017-05-29 14:23:03.347000"}, {"analyst": "nonroot", "date": "2017-05-29 14:23:16.337000"}, {"analyst": "nonroot", "date": "2017-05-29 14:23:31.460000"}, {"analyst": "nonroot", "date": "2017-05-29 14:23:47.773000"}, {"analyst": "nonroot", "date": "2017-05-29 14:28:54.508000"}, {"analyst": "nonroot", "date": "2017-05-29 14:29:28.374000"}, {"analyst": "nonroot", "date": "2017-05-29 14:36:46.581000"}, {"analyst": "nonroot", "date": "2017-05-29 14:46:02.806000"}, {"analyst": "nonroot", "date": "2017-05-29 14:51:22.931000"}, {"analyst": "nonroot", "date": "2017-05-29 14:56:35.525000"}, {"analyst": "nonroot", "date": "2017-05-29 14:56:47.978000"}, {"analyst": "nonroot", "date": "2017-05-29 14:57:32.812000"}, {"analyst": "nonroot", "date": "2017-05-29 14:57:51.849000"}, {"analyst": "nonroot", "date": "2017-05-29 14:58:17.270000"}, {"analyst": "yao", "date": "2017-05-29 22:48:01.847000"}, {"analyst": "yao", "date": "2017-05-29 22:55:44.454000"}], "name": "Faker Vault"}], "tickets": [], "bucket_list": [], "campaign": [], "locations": [], "objects": [], "relationships": [], "releasability": [], "screenshots": [], "sectors": [], "contentType": "tcpdump capture file (little-endian) - version 2.4 (Ethernet, capture length 65536)", "filedata": "592bed8f7f79fa0138e76906", "filename": "test.pcap", "length": 189458, "md5": "919a28d02db504696d508ef43c2ab64a"}
+{
+  "_id": "592bed8f7f79fa0138e76908",
+  "status": "New",
+  "created": "2017-05-29 09:44:47.881000",
+  "modified": "2017-05-29 22:55:44.455000",
+  "schema_version": 3,
+  "actions": [],
+  "source": [
+    {
+      "instances": [
+        {
+          "analyst": "nonroot",
+          "date": "2017-05-29 09:44:47.883000"
+        },
+        {
+          "analyst": "nonroot",
+          "date": "2017-05-29 09:45:23.973000"
+        },
+        {
+          "analyst": "nonroot",
+          "date": "2017-05-29 09:59:56.440000"
+        },
+        {
+          "analyst": "nonroot",
+          "date": "2017-05-29 10:04:49.850000"
+        },
+        {
+          "analyst": "nonroot",
+          "date": "2017-05-29 10:05:18.819000"
+        },
+        {
+          "analyst": "nonroot",
+          "date": "2017-05-29 10:09:49.731000"
+        },
+        {
+          "analyst": "nonroot",
+          "date": "2017-05-29 11:35:48.371000"
+        },
+        {
+          "analyst": "nonroot",
+          "date": "2017-05-29 11:35:57.886000"
+        },
+        {
+          "analyst": "nonroot",
+          "date": "2017-05-29 11:37:29.899000"
+        },
+        {
+          "analyst": "nonroot",
+          "date": "2017-05-29 11:37:44.141000"
+        },
+        {
+          "analyst": "nonroot",
+          "date": "2017-05-29 11:44:18.757000"
+        },
+        {
+          "analyst": "nonroot",
+          "date": "2017-05-29 11:44:36.413000"
+        },
+        {
+          "analyst": "nonroot",
+          "date": "2017-05-29 11:47:09.945000"
+        },
+        {
+          "analyst": "nonroot",
+          "date": "2017-05-29 12:23:51.101000"
+        },
+        {
+          "analyst": "nonroot",
+          "date": "2017-05-29 14:22:01.104000"
+        },
+        {
+          "analyst": "nonroot",
+          "date": "2017-05-29 14:22:22.870000"
+        },
+        {
+          "analyst": "nonroot",
+          "date": "2017-05-29 14:23:03.347000"
+        },
+        {
+          "analyst": "nonroot",
+          "date": "2017-05-29 14:23:16.337000"
+        },
+        {
+          "analyst": "nonroot",
+          "date": "2017-05-29 14:23:31.460000"
+        },
+        {
+          "analyst": "nonroot",
+          "date": "2017-05-29 14:23:47.773000"
+        },
+        {
+          "analyst": "nonroot",
+          "date": "2017-05-29 14:28:54.508000"
+        },
+        {
+          "analyst": "nonroot",
+          "date": "2017-05-29 14:29:28.374000"
+        },
+        {
+          "analyst": "nonroot",
+          "date": "2017-05-29 14:36:46.581000"
+        },
+        {
+          "analyst": "nonroot",
+          "date": "2017-05-29 14:46:02.806000"
+        },
+        {
+          "analyst": "nonroot",
+          "date": "2017-05-29 14:51:22.931000"
+        },
+        {
+          "analyst": "nonroot",
+          "date": "2017-05-29 14:56:35.525000"
+        },
+        {
+          "analyst": "nonroot",
+          "date": "2017-05-29 14:56:47.978000"
+        },
+        {
+          "analyst": "nonroot",
+          "date": "2017-05-29 14:57:32.812000"
+        },
+        {
+          "analyst": "nonroot",
+          "date": "2017-05-29 14:57:51.849000"
+        },
+        {
+          "analyst": "nonroot",
+          "date": "2017-05-29 14:58:17.270000"
+        },
+        {
+          "analyst": "yao",
+          "date": "2017-05-29 22:48:01.847000"
+        },
+        {
+          "analyst": "yao",
+          "date": "2017-05-29 22:55:44.454000"
+        }
+      ],
+      "name": "Faker Vault"
+    }
+  ],
+  "tickets": [],
+  "bucket_list": [],
+  "campaign": [],
+  "locations": [],
+  "objects": [],
+  "relationships": [],
+  "releasability": [],
+  "screenshots": [],
+  "sectors": [],
+  "contentType": "tcpdump capture file (little-endian) - version 2.4 (Ethernet, capture length 65536)",
+  "filedata": "592bed8f7f79fa0138e76906",
+  "filename": "test.pcap",
+  "length": 189458,
+  "md5": "919a28d02db504696d508ef43c2ab64a"
+}

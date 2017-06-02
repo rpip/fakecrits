@@ -1,1 +1,83 @@
-{"_id": "592b24e07f79fa013927af8f", "status": "New", "created": "2017-05-28 19:28:32.106000", "modified": "2017-05-28 19:28:32.458000", "schema_version": 3, "actions": [], "source": [{"instances": [{"analyst": "nonroot", "date": "2017-05-28 19:28:32.106000", "method": "otx2crits", "reference": "No reference documented"}], "name": "AlienVault OTX"}], "tickets": [{"analyst": "nonroot", "date": "2017-05-28 19:28:32.422000", "ticket_number": "59148e4b4afdd01a804d23e9"}], "bucket_list": ["phishing"], "campaign": [], "locations": [], "objects": [], "relationships": [{"relationship": "Related To", "relationship_date": "2017-05-28 19:28:32.471000", "value": "592b24e07f79fa013927af91", "date": "2017-05-28 19:28:32.505000", "type": "Indicator", "analyst": "nonroot", "rel_reason": "Related during automatic OTX import", "rel_confidence": "high"}, {"relationship": "Related To", "relationship_date": "2017-05-28 19:28:32.509000", "value": "592b24e07f79fa013927af94", "date": "2017-05-28 19:28:32.548000", "type": "Indicator", "analyst": "nonroot", "rel_reason": "Related during automatic OTX import", "rel_confidence": "high"}, {"relationship": "Related To", "relationship_date": "2017-05-28 19:28:32.579000", "value": "592b24e07f79fa0138e76797", "date": "2017-05-28 19:28:32.618000", "type": "Indicator", "analyst": "nonroot", "rel_reason": "Related during automatic OTX import", "rel_confidence": "high"}, {"relationship": "Related To", "relationship_date": "2017-05-28 19:28:32.622000", "value": "592b24e07f79fa013927af97", "date": "2017-05-28 19:28:32.662000", "type": "Indicator", "analyst": "nonroot", "rel_reason": "Related during automatic OTX import", "rel_confidence": "high"}], "releasability": [], "screenshots": [], "sectors": [], "title": "Phishing email with link", "event_type": "Intel Sharing", "description": "Phishing email - Document Received- (scanned_New Invoice00874.pdf)", "event_id": null}
+{
+  "_id": "592b24e07f79fa013927af8f",
+  "status": "New",
+  "created": "2017-05-28 19:28:32.106000",
+  "modified": "2017-05-28 19:28:32.458000",
+  "schema_version": 3,
+  "actions": [],
+  "source": [
+    {
+      "instances": [
+        {
+          "analyst": "nonroot",
+          "date": "2017-05-28 19:28:32.106000",
+          "method": "otx2crits",
+          "reference": "No reference documented"
+        }
+      ],
+      "name": "AlienVault OTX"
+    }
+  ],
+  "tickets": [
+    {
+      "analyst": "nonroot",
+      "date": "2017-05-28 19:28:32.422000",
+      "ticket_number": "59148e4b4afdd01a804d23e9"
+    }
+  ],
+  "bucket_list": [
+    "phishing"
+  ],
+  "campaign": [],
+  "locations": [],
+  "objects": [],
+  "relationships": [
+    {
+      "relationship": "Related To",
+      "relationship_date": "2017-05-28 19:28:32.471000",
+      "value": "592b24e07f79fa013927af91",
+      "date": "2017-05-28 19:28:32.505000",
+      "type": "Indicator",
+      "analyst": "nonroot",
+      "rel_reason": "Related during automatic OTX import",
+      "rel_confidence": "high"
+    },
+    {
+      "relationship": "Related To",
+      "relationship_date": "2017-05-28 19:28:32.509000",
+      "value": "592b24e07f79fa013927af94",
+      "date": "2017-05-28 19:28:32.548000",
+      "type": "Indicator",
+      "analyst": "nonroot",
+      "rel_reason": "Related during automatic OTX import",
+      "rel_confidence": "high"
+    },
+    {
+      "relationship": "Related To",
+      "relationship_date": "2017-05-28 19:28:32.579000",
+      "value": "592b24e07f79fa0138e76797",
+      "date": "2017-05-28 19:28:32.618000",
+      "type": "Indicator",
+      "analyst": "nonroot",
+      "rel_reason": "Related during automatic OTX import",
+      "rel_confidence": "high"
+    },
+    {
+      "relationship": "Related To",
+      "relationship_date": "2017-05-28 19:28:32.622000",
+      "value": "592b24e07f79fa013927af97",
+      "date": "2017-05-28 19:28:32.662000",
+      "type": "Indicator",
+      "analyst": "nonroot",
+      "rel_reason": "Related during automatic OTX import",
+      "rel_confidence": "high"
+    }
+  ],
+  "releasability": [],
+  "screenshots": [],
+  "sectors": [],
+  "title": "Phishing email with link",
+  "event_type": "Intel Sharing",
+  "description": "Phishing email - Document Received- (scanned_New Invoice00874.pdf)",
+  "event_id": null
+}

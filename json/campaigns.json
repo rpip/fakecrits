@@ -1,1 +1,45 @@
-{"meta": {"limit": 20, "next": null, "offset": 0, "previous": null, "total_count": 1}, "objects": [{"_id": "592c0a3e7f79fa0138e76957", "actions": [], "active": "on", "actor_count": 0, "aliases": [], "backdoor_count": 0, "bucket_list": ["Fake Malware DB"], "campaign": [], "created": "2017-05-29 11:47:10.545000", "description": "Sequi non voluptas cumque doloremque molestias harum sapiente.", "domain_count": 0, "email_count": 0, "event_count": 0, "exploit_count": 0, "indicator_count": 0, "ip_count": 0, "locations": [], "modified": "2017-05-29 11:47:10.557000", "name": "NetTraveler", "objects": [], "pcap_count": 0, "relationships": [], "releasability": [], "sample_count": 0, "schema_version": 3, "screenshots": [], "sectors": [], "status": "New", "tickets": [], "ttps": []}]}
+{
+  "meta": {
+    "limit": 20,
+    "next": null,
+    "offset": 0,
+    "previous": null,
+    "total_count": 1
+  },
+  "objects": [
+    {
+      "_id": "592c0a3e7f79fa0138e76957",
+      "actions": [],
+      "active": "on",
+      "actor_count": 0,
+      "aliases": [],
+      "backdoor_count": 0,
+      "bucket_list": [
+        "Fake Malware DB"
+      ],
+      "campaign": [],
+      "created": "2017-05-29 11:47:10.545000",
+      "description": "Sequi non voluptas cumque doloremque molestias harum sapiente.",
+      "domain_count": 0,
+      "email_count": 0,
+      "event_count": 0,
+      "exploit_count": 0,
+      "indicator_count": 0,
+      "ip_count": 0,
+      "locations": [],
+      "modified": "2017-05-29 11:47:10.557000",
+      "name": "NetTraveler",
+      "objects": [],
+      "pcap_count": 0,
+      "relationships": [],
+      "releasability": [],
+      "sample_count": 0,
+      "schema_version": 3,
+      "screenshots": [],
+      "sectors": [],
+      "status": "New",
+      "tickets": [],
+      "ttps": []
+    }
+  ]
+}

@@ -1,1 +1,34 @@
-{"_id": "592c0a3e7f79fa0138e76957", "status": "New", "created": "2017-05-29 11:47:10.545000", "modified": "2017-05-29 11:47:10.557000", "schema_version": 3, "actions": [], "tickets": [], "bucket_list": ["Fake Malware DB"], "campaign": [], "locations": [], "description": "Sequi non voluptas cumque doloremque molestias harum sapiente.", "objects": [], "relationships": [], "releasability": [], "screenshots": [], "sectors": [], "active": "on", "aliases": [], "actor_count": 0, "backdoor_count": 0, "domain_count": 0, "email_count": 0, "event_count": 0, "exploit_count": 0, "indicator_count": 0, "ip_count": 0, "name": "NetTraveler", "pcap_count": 0, "sample_count": 0, "ttps": []}
+{
+  "_id": "592c0a3e7f79fa0138e76957",
+  "status": "New",
+  "created": "2017-05-29 11:47:10.545000",
+  "modified": "2017-05-29 11:47:10.557000",
+  "schema_version": 3,
+  "actions": [],
+  "tickets": [],
+  "bucket_list": [
+    "Fake Malware DB"
+  ],
+  "campaign": [],
+  "locations": [],
+  "description": "Sequi non voluptas cumque doloremque molestias harum sapiente.",
+  "objects": [],
+  "relationships": [],
+  "releasability": [],
+  "screenshots": [],
+  "sectors": [],
+  "active": "on",
+  "aliases": [],
+  "actor_count": 0,
+  "backdoor_count": 0,
+  "domain_count": 0,
+  "email_count": 0,
+  "event_count": 0,
+  "exploit_count": 0,
+  "indicator_count": 0,
+  "ip_count": 0,
+  "name": "NetTraveler",
+  "pcap_count": 0,
+  "sample_count": 0,
+  "ttps": []
+}
