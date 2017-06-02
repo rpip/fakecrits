@@ -1,0 +1,196 @@
+#!/usr/bin/env python
+
+import os
+import sys
+import datetime
+import argparse
+from hashlib import md5
+from random import choice
+
+from pycrits import pycrits
+from faker import Faker
+fake = Faker()
+
+BUCKET_LIST = 'Fake Malware DB'
+RESULTS = []
+
+parser = argparse.ArgumentParser(description='Imports fake data into CRITs')
+parser.add_argument('--url', action="store", required=True)
+parser.add_argument('--user', action="store", default='admin', required=True)
+parser.add_argument('--key', action="store", required=True)
+parser.add_argument('--source', action="store", default='Faker Vault')
+parser.add_argument('--campaign', action="store", default='NetTraveler')
+parser.add_argument('-v', action="store_true", default=False, help='verify HTTPs endpoint')
+
+args = parser.parse_args(sys.argv[1:])
+
+crits = pycrits(args.url, args.user, args.key, verify=args.v)
+SOURCE = args.source
+CAMPAIGN = args.campaign
+
+def setup_crits():
+    # TODO: Add IP to domain
+    _results = []
+
+    actor = crits.add_actor(
+        name=fake.catch_phrase(),
+        source=SOURCE,
+        params = {
+            'campaign': CAMPAIGN,
+            'description': fake.sentences(nb=2),
+            'aliases': '{},{}'.format(fake.word(), fake.word())
+        }
+    )
+    _results.append(actor)
+
+    actor_identifier = crits.add_actor_identifier(
+        id_type='Malware',
+        id_=fake.word(),
+        source=SOURCE,
+    )
+    _results.append(actor_identifier)
+
+    certificate = crits.add_certificate(
+        source=SOURCE,
+        filepath=os.path.join(os.getcwd(), 'alice.crt'),
+        filename='alice.crt',
+        params = {
+            'bucket_list': BUCKET_LIST,
+            'description': fake.sentences(nb=3)
+        }
+    )
+    _results.append(certificate)
+
+    event = crits.add_event(
+        type_='Intel Sharing',
+        title=fake.sentence(),
+        description=fake.sentences(nb=3),
+        source=SOURCE,
+        params={
+            'campaign': CAMPAIGN
+        }
+    )
+    _results.append(event)
+
+    target = crits.add_target(email=fake.email())
+    _results.append(target)
+
+    filename, f = create_file()
+    sample = crits.add_sample(
+        'metadata',
+        source=SOURCE,
+        filename=filename,
+        file_obj=f,
+        params={
+            'md5': md5(filename).hexdigest(),
+            'bucket_list': BUCKET_LIST
+        }
+    )
+    _results.append(sample)
+
+    filename, f = create_file()
+    raw_data = crits.add_raw_data(
+        type_='metadata',
+        title=fake.sentence(),
+        data_type='Text',
+        source=SOURCE,
+        data = fake.text(max_nb_chars=200),
+        filename=filename,
+        file_obj=f
+    )
+    _results.append(raw_data)
+
+    pcap = crits.add_pcap(
+        source=SOURCE,
+        file_obj=open('test.pcap', 'rb'),
+        filename='test.pcap'
+    )
+    _results.append(pcap)
+
+    ip = crits.add_ip(
+        ip=fake.ipv4(network=False),
+        type_='IPv4 Address',
+        source=SOURCE
+    )
+    _results.append(ip)
+
+    indicator = crits.add_indicator(
+        type_='URI',
+        value=fake.uri(),
+        source=SOURCE,
+        params={
+            'campaign': CAMPAIGN,
+            'bucket_list': BUCKET_LIST
+        }
+    )
+    _results.append(indicator)
+
+    filepath = os.path.join(os.getcwd(), 'unicode.msg')
+    email = crits.add_email(
+        type_='msg',
+        filepath=filepath,
+        source=SOURCE,
+        params={
+            'campaign': CAMPAIGN
+        }
+    )
+    _results.append(email)
+
+    domain = crits.add_domain(
+        domain=fake.domain_name(levels=1),
+        source=SOURCE,
+        params={
+            'campaign': CAMPAIGN,
+            'bucket_list': BUCKET_LIST,
+            'add_indicator': True
+        }
+    )
+    _results.append(domain)
+
+    campaign = crits.add_campaign(
+        name=CAMPAIGN,
+        params={
+            'bucket_list': BUCKET_LIST,
+            'description': fake.sentence()
+        }
+    )
+    _results.append(campaign)
+    # add_relationships(_results)
+
+    from pprint import pformat
+    open('results.txt', 'w').write(pformat(_results))
+
+
+def create_file():
+    filename = fake.file_name()
+    data = fake.text(max_nb_chars=200)
+    f = open(os.path.join('tmp', filename), 'wb').write(data)
+    return filename, f
+
+
+def add_relationships(objects):
+    # add relationships between objects
+    print "Adding relationships"
+    for idx, x in enumerate(objects):
+        left = x
+        if idx == len(objects) - 1:
+            right = objects[-1]
+
+        right = objects[idx+1]
+
+        crits.add_relationship(
+            left_type=left['type'],
+            left_id=left['id'],
+            right_type=right['type'],
+            right_id=right['id'],
+            rel_type='Related To',
+            params={
+                'rel_confidence': choice(['high', 'medium', 'low']),
+                'rel_date': datetime.datetime.now(),
+                'rel_reason': 'Related during fake data setup'
+            }
+        )
+
+
+if __name__ == '__main__':
+    setup_crits()
