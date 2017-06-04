@@ -14,6 +14,7 @@ script to load some fake data into CRITs
     3. Click "Add SourceAccess" near the top right. Add your source.
     4. Go to the "Users" section on the left hand side.
     5. Allow the user to use the source.
+* Add identifier type. At moment, you must manually the 'Malware' identifier type as this is what the script uses. You can modify the script if you wish to change this. It's thus because the URL endpoint for adding Identifier Types is not expose on the API endpoints (it's CSRF protected and thus can't be accessed externally).
 
 * More
 

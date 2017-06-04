@@ -6,6 +6,7 @@ import datetime
 import argparse
 from hashlib import md5
 from random import choice
+from pprint import pformat
 
 from pycrits import pycrits
 from faker import Faker
@@ -29,7 +30,14 @@ SOURCE = args.source
 CAMPAIGN = args.campaign
 
 def setup_crits():
-    # TODO: Add IP to domain
+    """
+    TODO:
+    - Add IP to domain
+    - Actor Identifier Type (before actor identifier)
+    - Add `occurrence_date` to event
+    - Add relationships
+    - Add screenshot
+    """
     _results = []
 
     actor = crits.add_actor(
@@ -157,7 +165,6 @@ def setup_crits():
     _results.append(campaign)
     # add_relationships(_results)
 
-    from pprint import pformat
     open('results.txt', 'w').write(pformat(_results))
 
 
